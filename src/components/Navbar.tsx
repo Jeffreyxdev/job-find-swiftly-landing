@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { SignIn, SignOut } from "lucide-react";
+import { LogIn, UserRound } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,12 +37,12 @@ const Navbar: React.FC = () => {
         {/* Auth Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="outline" className="bg-black text-white rounded-full px-6 py-2 hover:bg-gray-800">
-            <SignIn className="mr-2 h-4 w-4" />
+            <LogIn className="mr-2 h-4 w-4" />
             Sign In
           </Button>
           <Button variant="outline" className="bg-white border border-black text-black rounded-full px-6 py-2 hover:bg-gray-100">
-            <SignOut className="mr-2 h-4 w-4" />
-            Sign Out
+            <UserRound className="mr-2 h-4 w-4" />
+            Sign Up
           </Button>
         </div>
 
@@ -75,12 +75,12 @@ const Navbar: React.FC = () => {
             </a>
             <div className="flex flex-col space-y-3 pt-2">
               <Button variant="outline" className="bg-black text-white rounded-full px-6 py-2 w-full hover:bg-gray-800">
-                <SignIn className="mr-2 h-4 w-4" />
+                <LogIn className="mr-2 h-4 w-4" />
                 Sign In
               </Button>
               <Button variant="outline" className="bg-white border border-black text-black rounded-full px-6 py-2 w-full hover:bg-gray-100">
-                <SignOut className="mr-2 h-4 w-4" />
-                Sign Out
+                <UserRound className="mr-2 h-4 w-4" />
+                Sign Up
               </Button>
             </div>
           </div>
